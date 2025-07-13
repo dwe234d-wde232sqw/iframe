@@ -11,6 +11,8 @@
         const iframe = document.querySelector('iframe');
         if (iframe && id) {
             iframe.src = `https://huoma.syoik.com/land?id=${id}`;
+            iframe.width = "100vw";  // 设置宽度
+            iframe.height = "100vh"; // 设置高度
         }
     });
     </script>
