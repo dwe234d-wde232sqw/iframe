@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活码网页</title>
+    <script>        // 获取当前页面的查询参数 id
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    // 等待 DOM 加载完成后操作 iframe
+    window.addEventListener('DOMContentLoaded', function () {
+        const iframe = document.querySelector('iframe');
+        if (iframe && id) {
+            iframe.src = `https://huoma.syoik.com/land?id=${id}`;
+        }
+    });
+    </script>
+</head>
+<body>
+    <iframe src="https://huoma.syoik.com/land?id=" title="活码网页"></iframe>
+</body>
+</html>
